@@ -1,0 +1,154 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(221, 218, 219);
+  height: 60px;
+  width: 100%;
+  justify-content: space-between;
+}
+.logo {
+  width: 60px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2px;
+  padding: 10px;
+}
+nav ul li {
+  margin: 7px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+nav ul li a:hover {
+  color: purple;
+}
+.button {
+  border-radius: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  color: black;
+  border: none;
+  height: 40px;
+  padding: 12px;
+  font-weight: bold;
+}
+.sections {
+  padding: 30px;
+  display: flex;
+  background-color: rgb(172, 137, 143);
+  width: 100%;
+}
+.section1 {
+  padding: 90px 30px;
+  width: 50%;
+}
+h1 {
+  font-size: 80px;
+}
+p {
+  font-size: 17px;
+  line-height: 25px;
+}
+span {
+  text-shadow: 2px 2px 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.button2 {
+  border-radius: 15px;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  color: black;
+  border: none;
+  height: 40px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 12px;
+}
+.section2 {
+  display: flex;
+  width: 38%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.logo2 {
+  width: 30%;
+
+  border-radius: 200px;
+}
+@media only screen and (max-width: 600px) {
+  .sections {
+    flex-direction: row;
+  }
+  .section1,
+  .section2 {
+    width: 100%;
+  }
+}
+
+.all {
+  width: 100%;
+  display: flex;
+  background-color: rgb(221, 218, 219);
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  width: 20%;
+  height: 260px;
+  flex-wrap: wrap;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 10px 25px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 30px 10px;
+  transition: transform 0.5;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.aside {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  padding: 2px;
+  text-align: center;
+  align-items: center;
+  border: 2px solid brown;
+  margin: 50px;
+}
+@media only screen and (max-width: 600px) {
+  .all {
+    flex-direction: row;
+  }
+  .card,
+  .aside {
+    width: 100%;
+  }
+}
+/*
+Bo hamu tag ek abe ch codek gorankary tya kra awa la media query akaya bnusin
+bo har shashayak ema pixel eky dyary krawman haya danek yan zyatr atwanin bkain
+tailwind bakarbenin**
+*/
